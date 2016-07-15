@@ -1,0 +1,41 @@
+<ion-view >
+    <ion-nav-buttons  side="primary">
+          
+    <button   class="button button-icon button-clear ion-navicon" menu-toggle="left">
+    </button>
+    <button ng-hide="!showHeader"   class="button" ng-click="playClip()">
+    <i class="icon ion-ios-play"></i>
+    </button>
+    <label ng-hide="!showHeader"  class="item-input-wrapper textbox-search">
+    <i class="icon ion-ios7-search placeholder-icon"></i>
+    <input  type="search" placeholder="Duration">
+    </label>
+    <button ng-hide="!showHeader"  class="button" ng-click="ExpandClip()">
+    <i class="icon ion-arrow-expand"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content scroll="false" has-header="true" id="playlist" class="home-background">
+    
+    <!--back-img="{{imageUrl}}"-->
+
+    <!--<img alt="" ng-src="{{imageUrl}}" min-width="100%" max-height="100%" >-->
+  
+    <img alt="" ng-src="{{imageUrl}}" class="ipad-query" >
+
+
+
+    <!--<img alt="" ng-src="{{imageUrl}}" max-height="1024px" max-width="768px" width="100%" >-->
+
+    <!--<img   class="full-image" ng-src="{{imageUrl}}">           
+
+    <!--<ion-item class="card card-padding">
+    <div class="item item-text-wrap">
+    <h1>hi to the world</h1>
+    </div>
+    </ion-item>
+    -->
+  </ion-content>
+
+
+</ion-view>
